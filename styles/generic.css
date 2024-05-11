@@ -23,7 +23,6 @@ main {
 }
 
 section {
-    background-color: radial-gradient(rgba(0, 0, 0, 1.0), rgba(0,0,0,0));
     padding-bottom: 30px;
 }
 
@@ -146,4 +145,8 @@ section[class|="gallery"] a:hover {
 
 section[class|="gallery"] a:visited {
     text-decoration: underline;
+}
+
+a:has(>i) {
+    display: inline-block;
 }
