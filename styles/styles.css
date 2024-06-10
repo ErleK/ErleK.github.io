@@ -12,7 +12,17 @@
     font-size: 1.2rem;
 }
 
-.concerts div p:nth-of-type(2) {
+.concerts div:not(.masterclass) p:nth-of-type(2) {
     margin-bottom: 15px;
     font-size: 1.2rem;
 }
+
+.concerts div.masterclass p:nth-of-type(2) {
+    font-size: 1.2rem;
+}
+
+.concerts div.masterclass p:nth-of-type(3) {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
