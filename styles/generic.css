@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+    color: aliceblue;
+    background-color: black;
     /* background-image: url('../assets/ErleK6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,6 +48,19 @@ h2 {
     font-size: 1.43rem;
 }
 
+.contact-info a, footer a {
+    color: rgb(10, 87, 10);
+}
+/* roheline, mis Erlele meeldis rgb(10, 87, 10); */
+
+.contact-info > div > p:first-of-type {
+    font-size: 1.73rem;
+}
+
+.contact-info > div {
+    margin-bottom: 5rem;
+}
+
 .contact::after {
     content: '';
     clear: both;
@@ -57,13 +71,25 @@ h2 {
     margin-bottom: 1.5cm;
 }
 
-.concerts a {
-    color: black;
+.concerts a:hover {
+    text-decoration: underline;
+}
+
+.concerts a:visited {
+    color: white;
+}
+
+.gallery a {
+    color: white;
     text-decoration: none;
 }
 
-.concerts a:hover {
+.gallery a:hover {
     text-decoration: underline;
+}
+
+.gallery a:visited {
+    color: white;
 }
 
 footer {
@@ -80,12 +106,9 @@ footer i {
     margin: 0px 5px;
 }
 
-footer a {
-    color: darkblue;
-}
-
 .page-redirect-links {
     font-size: 1.3rem;
+    text-decoration: underline;
 }
 
 section[class|="gallery"] > div {
@@ -105,7 +128,7 @@ section[class~="gallery-all"] img {
 }
 
 section[class|="gallery"] a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -115,4 +138,13 @@ section[class|="gallery"] a:hover {
 
 a:has(>i) {
     display: inline-block;
+}
+
+.concerts a {
+    color: white;
+    text-decoration: none;
+}
+
+section[class|="gallery"] a:visited {
+    text-decoration: underline;
 }
